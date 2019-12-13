@@ -1,0 +1,353 @@
+PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(126): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(128): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(129): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(86): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(82): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dkkdk()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(25): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected ';'' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#2 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#3 E:\Laragon\www\phprunning\public\index.php(81): process()
+#4 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dates()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dates()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dates()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function eccc()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function eccc()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function eccc()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(41): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(22): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(306): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function dateIndod()' in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+:25
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(77): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\a6518843143b09c1f7693437f49102d8.extemp+ on line 25PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfeo()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:4
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 4PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfeo()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:4
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 4PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:4
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 4PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function phpinfosd()' in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+:3
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\Code.php(28): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\EditorController.php(80): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(47): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\codes\temp\8f061ba1ef923dafaecb927bf3ae01b7.extemp+ on line 3PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function log_message()' in E:\Laragon\www\phprunning\app\libraries\UserAgent.php:184
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\views\site\index.php(177): __construct()
+#1 E:\Laragon\www\phprunning\app\core\Controller.php(96): require_once(string)
+#2 E:\Laragon\www\phprunning\app\controllers\EditorController.php(68): view(string, string)
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\app\libraries\UserAgent.php on line 184PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '">' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'' in E:\Laragon\www\phprunning\app\views\site\index.php:107
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\controllers\EditorController.php(69): view(string, string)
+#1 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#2 E:\Laragon\www\phprunning\public\index.php(81): process()
+#3 {main}
+  thrown in E:\Laragon\www\phprunning\app\views\site\index.php on line 107PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'file_path' in 'field list'' in E:\Laragon\www\phprunning\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 E:\Laragon\www\phprunning\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): execute()
+#1 E:\Laragon\www\phprunning\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): statement(string, array)
+#2 E:\Laragon\www\phprunning\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): doInsert(array, string)
+#3 E:\Laragon\www\phprunning\app\models\SnippetModel.php(99): insert(array)
+#4 E:\Laragon\www\phprunning\app\core\DataEntry.php(179): insert()
+#5 E:\Laragon\www\phprunning\app\controllers\IndexController.php(70): save()
+#6 E:\Laragon\www\phprunning\app\controllers\IndexController.php(24): save()
+#7 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#8 E:\Laragon\www\phprunning\public\index.php(81): process()
+#9 {main}
+  thrown in E:\Laragon\www\phprunning\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '"modified"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'' in E:\Laragon\www\phprunning\app\models\SnippetModel.php:128
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\core\DataList.php(252): model(string)
+#1 E:\Laragon\www\phprunning\app\views\site\index.php(169): getDataAs(string)
+#2 E:\Laragon\www\phprunning\app\core\Controller.php(96): require_once(string)
+#3 E:\Laragon\www\phprunning\app\controllers\IndexController.php(32): view(string, string)
+#4 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#5 E:\Laragon\www\phprunning\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\phprunning\app\models\SnippetModel.php on line 128PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function pcntl_exec()' in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\CodeChecker.php(38): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(48): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(24): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function posix_getlogin()' in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\CodeChecker.php(38): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(48): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(24): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function posix_getlogin()' in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\CodeChecker.php(38): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(48): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(24): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+ on line 2PHP Fatal error:  Uncaught exception 'Error' with message 'Call to undefined function posix_getlogin()' in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+:2
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\libraries\CodeChecker.php(38): require_once()
+#1 E:\Laragon\www\phprunning\app\controllers\IndexController.php(48): run(string)
+#2 E:\Laragon\www\phprunning\app\controllers\IndexController.php(24): run()
+#3 E:\Laragon\www\phprunning\app\core\App.php(277): index()
+#4 E:\Laragon\www\phprunning\public\index.php(81): process()
+#5 {main}
+  thrown in E:\Laragon\www\phprunning\storage\snippets\temp\19055f8ad665a50b9b6506215a8f0598.extemp+ on line 2PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '}'' in E:\Laragon\www\phprunning\app\controllers\RawController.php:20
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\core\Autoloader.php(100): requireFile(string)
+#1 E:\Laragon\www\phprunning\app\core\Autoloader.php(73): loadMappedFile(string, string)
+#2 (): loadClass(string)
+#3 E:\Laragon\www\phprunning\app\core\App.php(244): spl_autoload_call(string)
+#4 E:\Laragon\www\phprunning\app\core\App.php(274): route()
+#5 E:\Laragon\www\phprunning\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\phprunning\app\controllers\RawController.php on line 20PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '}'' in E:\Laragon\www\phprunning\app\controllers\RawController.php:20
+Stack trace:
+#0 E:\Laragon\www\phprunning\app\core\Autoloader.php(100): requireFile(string)
+#1 E:\Laragon\www\phprunning\app\core\Autoloader.php(73): loadMappedFile(string, string)
+#2 (): loadClass(string)
+#3 E:\Laragon\www\phprunning\app\core\App.php(244): spl_autoload_call(string)
+#4 E:\Laragon\www\phprunning\app\core\App.php(274): route()
+#5 E:\Laragon\www\phprunning\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\phprunning\app\controllers\RawController.php on line 20PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '@'' in E:\Laragon\www\htmlrun\app\controllers\IndexController.php:53
+Stack trace:
+#0 E:\Laragon\www\htmlrun\app\core\Autoloader.php(105): requireFile(string)
+#1 E:\Laragon\www\htmlrun\app\core\Autoloader.php(78): loadMappedFile(string, string)
+#2 (): loadClass(string)
+#3 E:\Laragon\www\htmlrun\app\core\App.php(249): spl_autoload_call(string)
+#4 E:\Laragon\www\htmlrun\app\core\App.php(279): route()
+#5 E:\Laragon\www\htmlrun\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\htmlrun\app\controllers\IndexController.php on line 53PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '@'' in E:\Laragon\www\htmlrun\app\controllers\IndexController.php:53
+Stack trace:
+#0 E:\Laragon\www\htmlrun\app\core\Autoloader.php(105): requireFile(string)
+#1 E:\Laragon\www\htmlrun\app\core\Autoloader.php(78): loadMappedFile(string, string)
+#2 (): loadClass(string)
+#3 E:\Laragon\www\htmlrun\app\core\App.php(249): spl_autoload_call(string)
+#4 E:\Laragon\www\htmlrun\app\core\App.php(279): route()
+#5 E:\Laragon\www\htmlrun\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\htmlrun\app\controllers\IndexController.php on line 53PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '@'' in E:\Laragon\www\htmlrun\app\controllers\IndexController.php:53
+Stack trace:
+#0 E:\Laragon\www\htmlrun\app\core\Autoloader.php(105): requireFile(string)
+#1 E:\Laragon\www\htmlrun\app\core\Autoloader.php(78): loadMappedFile(string, string)
+#2 (): loadClass(string)
+#3 E:\Laragon\www\htmlrun\app\core\App.php(249): spl_autoload_call(string)
+#4 E:\Laragon\www\htmlrun\app\core\App.php(279): route()
+#5 E:\Laragon\www\htmlrun\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\htmlrun\app\controllers\IndexController.php on line 53PHP Fatal error:  Uncaught exception 'ParseError' with message 'syntax error, unexpected '@'' in E:\Laragon\www\htmlrun\app\controllers\IndexController.php:53
+Stack trace:
+#0 E:\Laragon\www\htmlrun\app\core\Autoloader.php(105): requireFile(string)
+#1 E:\Laragon\www\htmlrun\app\core\Autoloader.php(78): loadMappedFile(string, string)
+#2 (): loadClass(string)
+#3 E:\Laragon\www\htmlrun\app\core\App.php(249): spl_autoload_call(string)
+#4 E:\Laragon\www\htmlrun\app\core\App.php(279): route()
+#5 E:\Laragon\www\htmlrun\public\index.php(81): process()
+#6 {main}
+  thrown in E:\Laragon\www\htmlrun\app\controllers\IndexController.php on line 53

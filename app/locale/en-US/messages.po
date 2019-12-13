@@ -1,0 +1,513 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Nextpost v.3 - Main\n"
+"Language: en-us\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 
+msgid "Tools"
+msgstr "Tools"
+
+#: 
+msgid "Main Menu"
+msgstr "Main Menu"
+
+#: 
+msgid "Administrator"
+msgstr "Administrator"
+
+#: 
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: 
+msgid "My Drive"
+msgstr "My Drive"
+
+#: 
+msgid "Shared Files"
+msgstr "Shared Files"
+
+#: 
+msgid "Upload Files"
+msgstr "Upload Files"
+
+#: 
+msgid "Bulk Link"
+msgstr "Bulk Link"
+
+#: 
+msgid "Copy File"
+msgstr "Copy File"
+
+#: 
+msgid "Users"
+msgstr "Users"
+
+#: 
+msgid "Settings"
+msgstr "Settings"
+
+#: 
+msgid "Profile"
+msgstr "Profile"
+
+#: 
+msgid "Terms of Service"
+msgstr "Terms of Service"
+
+#: 
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: 
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: 
+msgid "About"
+msgstr "About"
+
+#: 
+msgid "Signout"
+msgstr "Signout"
+
+#: 
+msgid "Connect Drive"
+msgstr "Connect Drive"
+
+#: 
+msgid "Connect Drive to download"
+msgstr "Connect Drive to download"
+
+#: 
+msgid "Signin"
+msgstr "Signin"
+
+#: 
+msgid "My Profile"
+msgstr "My Profile"
+
+#: 
+msgid "Full Name"
+msgstr "Full Name"
+
+#: 
+msgid "Picture"
+msgstr "Picture"
+
+#: 
+msgid "Account Type"
+msgstr "Account Type"
+
+#: 
+msgid "Status"
+msgstr "Status"
+
+#: 
+msgid "Join Date"
+msgstr "Join Date"
+
+#: 
+msgid "Last Login"
+msgstr "Last Login"
+
+#: 
+msgid "Active"
+msgstr "Active"
+
+#: 
+msgid "Inactive"
+msgstr "Inactive"
+
+#: 
+msgid "Firstname"
+msgstr "Firstname"
+
+#: 
+msgid "Lastname"
+msgstr "Lastname"
+
+#: 
+msgid "Email"
+msgstr "Email"
+
+#: 
+msgid "Time Format"
+msgstr "Time Format"
+
+#: 
+msgid "Date Format"
+msgstr "Date Format"
+
+#: 
+msgid "Timezone"
+msgstr "Timezone"
+
+#: 
+msgid "Change Picture"
+msgstr "Change Picture"
+
+#: 
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: 
+msgid "Site Name"
+msgstr "Site Name"
+
+#: 
+msgid "Site Title"
+msgstr "Site Title"
+
+#: 
+msgid "Site Description"
+msgstr "Site Description"
+
+#: 
+msgid "Site Keywords"
+msgstr "Site Keywords"
+
+#: 
+msgid "Geonamesorg Username"
+msgstr "Geonamesorg Username"
+
+#: 
+msgid "Recommended length of the description is 150-160 characters"
+msgstr "Recommended length of the description is 150-160 characters"
+
+#: 
+msgid "Unlimited"
+msgstr "Unlimited"
+
+#: 
+msgid "Storage Quota"
+msgstr "Storage Quota"
+
+#: 
+msgid "Total Usage"
+msgstr "Total Usage"
+
+#: 
+msgid "Usage in Drive"
+msgstr "Usage in Drive"
+
+#: 
+msgid "Trash"
+msgstr "Trash"
+
+#: 
+msgid "Max Upload Size"
+msgstr "Max Upload Size"
+
+#: 
+msgid "Free Space"
+msgstr "Free Space"
+
+#: 
+msgid "Clear Trash"
+msgstr "Clear Trash"
+
+#: 
+msgid "Embed"
+msgstr "Embed"
+
+#: 
+msgid "Edit"
+msgstr "Edit"
+
+#: 
+msgid "Delete"
+msgstr "Delete"
+
+#: 
+msgid "Share"
+msgstr "Share"
+
+#: 
+msgid "Reload"
+msgstr "Reload"
+
+#: 
+msgid "View"
+msgstr "View"
+
+#: 
+msgid "Search..."
+msgstr "Search..."
+
+#: 
+msgid "Most Downloaded Files"
+msgstr "Most Downloaded Files"
+
+#: 
+msgid "Latest Shared Files"
+msgstr "Latest Shared Files"
+
+#: 
+msgid "Total Shared"
+msgstr "Total Shared"
+
+#: 
+msgid "Manage"
+msgstr "Manage"
+
+#: 
+msgid "File Name"
+msgstr "File Name"
+
+#: 
+msgid "Shareable link"
+msgstr "Shareable link"
+
+#: 
+msgid "File Type"
+msgstr "File Type"
+
+#: 
+msgid "File Size"
+msgstr "File Size"
+
+#: 
+msgid "Download"
+msgstr "Download"
+
+#: 
+msgid "Downloaded"
+msgstr "Downloaded"
+
+#: 
+msgid "Share this file"
+msgstr "Share this file"
+
+#: 
+msgid "File Information"
+msgstr "File Information"
+
+#: 
+msgid "Created Date"
+msgstr "Created Date"
+
+#: 
+msgid "Page Not Found"
+msgstr "Page Not Found"
+
+#: 
+msgid "Sorry, the page you are looking for could not be found."
+msgstr "Sorry, the page you are looking for could not be found."
+
+#: 
+msgid "Home"
+msgstr "Home"
+
+#: 
+msgid "Action"
+msgstr "Action"
+
+#: 
+msgid "Showing"
+msgstr "Showing"
+
+#: 
+msgid "to"
+msgstr "to"
+
+#: 
+msgid "of"
+msgstr "of"
+
+#: 
+msgid "entries"
+msgstr "entries"
+
+#: 
+msgid "Select file"
+msgstr "Select file"
+
+#: 
+msgid "Selected file"
+msgstr "Selected file"
+
+#: 
+msgid "Upload"
+msgstr "Upload"
+
+#: 
+msgid "Google Drive links"
+msgstr "Google Drive links"
+
+#: 
+msgid "New Name (Optional)"
+msgstr "New Name (Optional)"
+
+#: 
+msgid "Url must be public. Valid inputs are Google Drive links :"
+msgstr "Url must be public. Valid inputs are Google Drive links :"
+
+#: 
+msgid "Showing max of 200 latest entries from your google drive"
+msgstr "Showing max of 200 latest entries from your google drive"
+
+#: 
+msgid "Process"
+msgstr "Process"
+
+#: 
+msgid "Copy"
+msgstr "Copy"
+
+#: 
+msgid "There is no data!"
+msgstr "There is no data!"
+
+#: 
+msgid "Are you sure?"
+msgstr "Are you sure?"
+
+#: 
+msgid "Are you sure to remove data?"
+msgstr "Are you sure to remove data?"
+
+#: 
+msgid "Are you sure to empty trash?"
+msgstr "Are you sure to empty trash?"
+
+#: 
+msgid "Are you sure to delete %s files?"
+msgstr "Are you sure to delete %s files?"
+
+#: 
+msgid "Please select a file"
+msgstr "Please select a file"
+
+#: 
+msgid "%s files successfully deleted"
+msgstr "%s files successfully deleted"
+
+#: 
+msgid "%s files successfully shared"
+msgstr "%s files successfully shared"
+
+#: 
+msgid "%s has been copied to your drive!"
+msgstr "%s has been copied to your drive!"
+
+#: 
+msgid "It is not possible to get back removed file!"
+msgstr "It is not possible to get back removed file!"
+
+#: 
+msgid "Yes, Delete"
+msgstr "Yes, Delete"
+
+#: 
+msgid "Cancel"
+msgstr "Cancel"
+
+#: 
+msgid "Close"
+msgstr "Close"
+
+#: 
+msgid "Success"
+msgstr "Success"
+
+#: 
+msgid "Info"
+msgstr "Info"
+
+#: 
+msgid "Error"
+msgstr "Error"
+
+#: 
+msgid "Done"
+msgstr "Done"
+
+#: 
+msgid "Version"
+msgstr "Version"
+
+#: 
+msgid "Created by"
+msgstr "Created by"
+
+#: 
+msgid "Failed"
+msgstr "Failed"
+
+#: 
+msgid "Loading..."
+msgstr "Loading..."
+
+#: 
+msgid "Copied!"
+msgstr "Copied!"
+
+#: 
+msgid "Changes saved!"
+msgstr "Changes saved!"
+
+#: 
+msgid "Oops, unable to copy"
+msgstr "Oops, unable to copy"
+
+#: 
+msgid "Fill required fields"
+msgstr "Fill required fields"
+
+#: 
+msgid "Missing some of required data."
+msgstr "Missing some of required data."
+
+#: 
+msgid "Failed to copy file"
+msgstr "Failed to copy file"
+
+#: 
+msgid "Failed to empty trash"
+msgstr "Failed to empty trash"
+
+#: 
+msgid "Url invalid"
+msgstr "Url invalid"
+
+#: 
+msgid "Encryption error"
+msgstr "Encryption error"
+
+#: 
+msgid "Unauthorized"
+msgstr "Unauthorized"
+
+#: 
+msgid "Failed to download file"
+msgstr "Failed to download file"
+
+#: 
+msgid "Failed to delete file"
+msgstr "Failed to delete file"
+
+#: 
+msgid "Failed to share file"
+msgstr "Failed to share file"
+
+#: 
+msgid "Your Google Drive account was full, please delete some files."
+msgstr "Your Google Drive account was full, please delete some files."
+
+#: 
+msgid "Your Google Drive account was limited, please login with another Google account. The account will be returned to normal after 24 hours."
+msgstr "Your Google Drive account was limited, please login with another Google account. The account will be returned to normal after 24 hours."
+
+#: 
+msgid "File cannot be opened"
+msgstr "File cannot be opened"
+
+#: 
+msgid "Oops! An error occured. Please try again later!"
+msgstr "Oops! An error occured. Please try again later!"

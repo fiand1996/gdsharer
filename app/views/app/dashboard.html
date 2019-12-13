@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-green"><i class="ion ion-cloud"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-text">{{ lang('Storage Quota') }}</span>
+                                <span class="info-box-number">
+                                    {{ driveQuota.limit ? readableFileSize(driveQuota.limit) : lang('Unlimited') }}
+                               </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-aqua"><i class="ion ion-stats-bars"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-text">{{ lang('Total Usage') }}</span>
+                                <span class="info-box-number">{{ readableFileSize(driveQuota.usage) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-yellow"><i class="ion ion-upload"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">{{ lang('Usage in Drive') }}</span>
+                                <span class="info-box-number">{{ readableFileSize(driveQuota.usageInDrive) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-purple"><i class="ion ion-trash-b"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">{{ lang('Trash') }}</span>
+                                <span
+                                    class="info-box-number">{{ readableFileSize(driveQuota.usageInDriveTrash) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-navy"><i
+                                    class="ion ion-ios-cloud-upload-outline"></i></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">{{ lang('Max Upload Size') }}</span>
+                                <span class="info-box-number">{{ readableFileSize(driveUploadSize) }}</span>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <span class="info-box-icon bg-blue"><i class="ion ion-stats-bars"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">{{ lang('Free Space') }}</span>
+                                <span class="info-box-number">
+                                    {% if driveQuota.limit %}
+                                        {{ readableFileSize(driveQuota.limit - driveQuota.usage) }}
+                                    {% else %}
+                                        {{ lang('Unlimited') }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box box-solid">
+                            <div class="box-body text-center">
+                                {% set trash = readableFileSize(driveQuota.usageInDriveTrash) %}
+                                {% set disabled = trash > 0 ? "" : "disabled" %}
+
+                                <button data-url="{{ constant('APPURL') }}/dashboard"
+                                    class="btn btn-empty-trash btn-block btn-danger" {{ disabled }}>
+                                    <i class="fa fa-fw fa-eraser"></i>{{ lang('Clear Trash') }}</button>
+                            </div>
+                        </div>
+                        <div class="box box-primary" style="min-height: 150px">
+                            <div class="box-header">
+                                <h3 class="box-title text-blue">{{ lang('Total Shared')|upper }}</h3>
+
+                                <div class="box-tools pull-right">
+                                    <a href="{{ constant('APPURL') }}/shared">{{ lang('Manage') }} <i
+                                            class="fa fa-fw fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="box-body text-center">
+                                <h2 style="text-align: center;">
+                                    <span class="label label-primary">{{ Shareds.getTotalCount() }}</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <h3 class="box-title"><i class="fa fa-cloud-download"></i> {{ lang('Most Downloaded Files') }}</h3>
+                            </div>
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th>{{ lang('File Name') }}</th>
+                                            <th>{{ lang('File Type') }}</th>
+                                            <th>{{ lang('Downloaded') }}</th>
+                                        </tr>
+
+                                        {% if MostDownload.getTotalCount() > 0 %}
+                                            {% for shared in MostDownload.getDataAs('Shared') %}
+                                                <tr>
+                                                    <td>{{ shared.get("file_name") }}</td>
+                                                    <td>{{ shared.get("file_mimeType") }}</td>
+                                                    <td>
+                                                        <span class="label label-primary">{{ shared.get("download_count") }}x</span>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="3">
+                                                    <div class="center-block text-center">{{ lang('There is no data!') }}</div>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <h3 class="box-title"><i class="fa fa-share"></i> {{ lang('Latest Shared Files') }}</h3>
+                            </div>
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th>{{ lang('File Name') }}</th>
+                                            <th>{{ lang('File Type') }}</th>
+                                            <th>{{ lang('File Size') }}</th>
+                                            <th>{{ lang('Created Date') }}</th>
+                                        </tr>
+
+                                        {% if LastShared.getTotalCount() > 0 %}
+                                            {% for shared in LastShared.getDataAs('Shared') %}
+                                                <tr>
+                                                    <td>{{ shared.get("file_name") }}</td>
+                                                    <td>{{ shared.get("file_mimeType") }}</td>
+                                                    <td>{{ readableFileSize(shared.get("file_size")) }}</td>
+                                                    <td>
+
+                                                        {% set created = shared.get('created') %}
+                                                        {% set dateformat = AuthUser.get('date_format') %}
+                                                        {% set timeformat = AuthUser.get('time_format') == "12" ? "h:i A" : "H:i" %}
+
+                                                        {{ dateFormat(created, dateformat, AuthUser.get('timezone')) }}
+                                                        {{ dateFormat(created, timeformat, AuthUser.get('timezone')) }}
+                                                        
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="3">
+                                                    <div class="center-block text-center">{{ lang('There is no data!') }}</div>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+</body>
+
+</html>

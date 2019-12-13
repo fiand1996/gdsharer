@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>{{ lang('Page Not Found') }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/x-icon" href="{{ constant('APPURL') }}/assets/img/favicon.ico?v={{ constant('APP_VERSION') }}">
+    <link rel="stylesheet" type="text/css" href="{{ constant('APPURL') }}/assets/css/landing.css?v={{ constant('APP_VERSION') }}">
+</head>
+<body>
+	<main role="main" class="container">
+		<div class="text-center" style="padding-top:5em;">
+			<h1 class="text-danger" style="font-size:120px">404</h1>
+			<h3 class="text-danger">{{ lang('Page Not Found') }}</h3>
+			<p class="lead">{{ lang('Sorry, the page you are looking for could not be found.') }}</p>
+			<a class="btn btn-danger" href="{{ constant('APPURL') }}">{{ lang('Home') }}</a>
+		</div>
+	</main>
+</body>
+</html>

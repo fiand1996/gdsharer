@@ -1,0 +1,70 @@
+<div id="navigation" class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+          <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="{{ constant('APPURL') }}"><b>{{ generalSetting('site_name') }}</b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav">
+                    <li><a href="{{ constant('APPURL') }}/terms">{{ lang('Terms of Service') }}</a></li>
+                    <li><a href="{{ constant('APPURL') }}/privacy">{{ lang('Privacy Policy') }}</a></li>
+                    <li><a href="{{ constant('APPURL') }}/contact">{{ lang('Contact Us') }}</a></li>
+                    <li><a href="{{ constant('APPURL') }}/about">{{ lang('About') }}</a></li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                              {% for lang in Config.get('applangs') %}
+                                   {% if lang['code'] == constant('ACTIVE_LANG') %}
+                                        {{ lang['localname'] }}
+                                   {% endif %}
+                              {% endfor %}
+                              <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu change-language" role="menu">
+                              {% for lang in Config.get('applangs') %}
+                                   <li>
+                                        <a data-lang="{{ lang['code'] }}" href="javascript:void(0)">{{ lang['localname'] }}</a>
+                                   </li>
+                              {% endfor %}
+                         </ul>
+                    </li>
+                    
+                    {% if AuthUser is not null %}
+                         <li class="dropdown">
+                              <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
+                                   <img width="30" src="{{ AuthUser.get("picture") }}" class="img-circle special-img">
+                                   {{ AuthUser.get("firstname") }} {{ AuthUser.get("lastname") }} <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                   <li>
+                                        <a href="{{ constant('APPURL') }}/dashboard">
+                                             <i class="fa fa-dashboard"></i> {{ lang('Dashboard') }}
+                                        </a>
+                                   </li>
+                                   <li class="divider"></li>
+                                   <li>
+                                        <a href="{{ constant('APPURL') }}/profile">
+                                             <i class="fa fa-user"></i> {{ lang('Profile') }}
+                                        </a>
+                                   </li>
+                                   <li class="divider"></li>
+                                   <li>
+                                        <a href="{{ constant('APPURL') }}/signout">
+                                             <i class="fa fa-sign-out"></i> {{ lang('Signout') }}
+                                        </a>
+                                   </li>
+                              </ul>
+                         </li>
+                    {% else %}
+                         <li><a href="{{ constant('APPURL') }}/signin">{{ lang('Connect Drive') }}</a></li>
+                    {% endif %}
+
+               </ul>
+          </div>
+     </div>
+</div>

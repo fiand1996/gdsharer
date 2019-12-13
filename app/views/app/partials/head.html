@@ -1,0 +1,19 @@
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+     <meta name="theme-color" content="#ca4737">
+     <meta name="msapplication-navbutton-color" content="#ca4737">
+     <meta name="apple-mobile-web-app-status-bar-style" content="#ca4737">
+     <meta name="csrftoken" content="{{ CSRFToken }}">
+
+     {% if pageTitle is defined %}
+          <title>{{ pageTitle }} - {{ generalSetting('site_name') }}</title>
+     {% else %}
+          <title>{{ generalSetting('site_name') }} - {{ generalSetting('site_title') }}</title>
+     {% endif %}
+
+     <link rel="icon" type="image/x-icon" href="{{ constant('APPURL') }}/assets/img/favicon.ico?v={{ constant('APP_VERSION') }}">
+     <link rel="stylesheet" type="text/css" href="{{ constant('APPURL') }}/assets/css/plugins.css?v={{ constant('APP_VERSION') }}">
+     <link rel="stylesheet" type="text/css" href="{{ constant('APPURL') }}/assets/css/core.css?v={{ constant('APP_VERSION') }}">
+</head>

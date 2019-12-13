@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form id="form-ajax" method="POST" action="{{ currentUrl }}" accept-charset="UTF-8"
+                            role="form">
+                            <input type="hidden" name="action" value="copy">
+                            <div class="box box-danger">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title"><i class="fa fa-files-o"></i> {{ lang('Copy File') }}</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="message"></div>
+                                    <div class="form-group">
+                                        <label for="">{{ lang('New Name (Optional)') }}</label>
+                                        <input type="text" class="form-control" placeholder="new_name.mp4" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">{{ lang('Google Drive links') }}</label>
+                                        <textarea type="text" name="url" id="url" rows="4" class="required form-control"
+                                            placeholder="https://drive.google.com/file/d/0B9tF9GDXHgsccllCSjM1WXRwTm8/view?usp=sharing"></textarea>
+                                    </div>
+                                    <span class="help-block"> {{ lang('Url must be public. Valid inputs are Google Drive links :') }}
+                                        <ul>
+                                            <li class="list-inline-item">https://drive.google.com/file/d/...</li>
+                                            <li class="list-inline-item">https://drive.google.com/uc?id=...</li>
+                                            <li class="list-inline-item">https://drive.google.com/open?id=...</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                                <div class="box-footer clearfix">
+                                    <button type="submit" class="pull-right btn btn-primary">{{ lang('Copy') }}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+</body>
+
+</html>

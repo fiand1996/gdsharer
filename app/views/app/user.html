@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="box box-solid">
+                            <form id="form-ajax" action="{{ currentUrl }}" method="post">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">{{ lang("My Profile") }}</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="message"></div>
+
+                                    <div class="form-group  text-center">
+                                        <img height="100" width="100" class="profile-user-img img-responsive img-circle"
+                                            src="{{ User.get('picture') }}"
+                                            alt="User profile picture">
+                                        <span class="btn btn-default btn-xs btn-file"> {{ lang("Change Picture") }}
+                                            <input name="file-upload-input" class="file-upload-input" id="input"
+                                                type='file' accept=".jpg, .png" />
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="is_active">{{ lang("Status") }}</label>
+                                             <select name="is_active" id="is_active" class="required form-control">
+                                                  <option value="1" {{ User.get('is_active') == 1 ? "selected" : "" }}>
+                                                       {{ lang('Active') }}
+                                                  </option>
+                                                  <option value="0" {{ User.get('is_active') == 0 ? "selected" : "" }}>
+                                                       {{ lang('Inactive') }}
+                                                  </option>
+                                             </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                             <label for="account_type">{{ lang('Account Type') }}</label>
+                                             <select name="account_type" id="account_type" class="required form-control">
+                                                  <option value="admin" {{ User.get('account_type') == 'admin' ? "selected" : "" }}>
+                                                       {{ lang('Admin') }}
+                                                  </option>
+                                                  <option value="member" {{ User.get('account_type') == 'member' ? "selected" : "" }}>
+                                                       {{ lang('Member') }}
+                                                  </option>
+                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="firstname">{{ lang("Firstname") }}</label>
+                                            <input id="firstname" name="firstname" class="required form-control" type="text"
+                                                value="{{ User.get('firstname') }}">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname">{{ lang("Lastname") }}</label>
+                                            <input id="lastname" name="lastname" class="required form-control" type="text"
+                                                value="{{ User.get('lastname') }}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">{{ lang("Email") }}</label>
+                                        <input id="email" name="email" class="form-control" type="email"
+                                            value="{{ User.get('email') }}" disabled>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="time_format">{{ lang("Time Format") }}</label>
+
+                                            {% set timeformat = User.get('time_format') == "12" ? "12" : "24" %}
+
+                                            <select id="time_format" name="time_format" class="form-control">
+                                                <option value="24" {{ timeformat == "24" ? "selected" : "" }}>
+                                                    24 Hours
+                                                </option>
+                                                <option value="12" {{ timeformat == "12" ? "selected" : "" }}>
+                                                    12 Hours
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="date_format">{{ lang("Date Format") }}</label>
+                                            <select id="date_format" name="date_format" class="form-control">
+
+                                                {% set avaiableformat = [
+                                                    'Y-m-d', 'd-m-Y', 'd/m/Y', 'm/d/Y',
+                                                    'd F Y', 'F d, Y', 'd M, Y', 'M d, Y'
+                                                ] %}
+
+                                                {% set dateformat = User.get('date_format') %}
+
+                                                {% for format in avaiableformat %}
+                                                    <option value="{{ format }}" {{ dateformat == format ? "selected" : "" }}>
+                                                        {{ "now"|date(format) }}
+                                                    </option>
+                                                {% endfor %}
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="timezone">{{ lang("Timezone") }}</label>
+                                        <select id="timezone" name="timezone" class="form-control select2">
+
+                                            {% set timezone = User.get('timezone') %}
+
+                                            {% for key, value in timezones %}
+                                                <option value="{{ key }}" {{ timezone == key ? "selected" : "" }}>
+                                                    {{ value }}
+                                                </option>
+                                            {% endfor %}
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box-footer">
+                                    <input type="hidden" name="action" value="save">
+                                    <button type="submit" class="btn btn-primary">{{ lang("Save Changes") }}</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            {{ include('fragments/crop-modal.html') }}
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+</body>
+
+</html>

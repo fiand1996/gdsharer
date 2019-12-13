@@ -1,0 +1,62 @@
+<header class="main-header">
+    <a href="{{ constant('APPURL') }}" class="logo">
+        <span class="logo-mini">
+            <img class="brandlogo-image" src="{{ constant('APPURL') }}/assets/img/favicon-96x96.png" alt="">
+        </span>
+        <span class="logo-lg"><strong>{{ generalSetting('site_name') }}</strong></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        {% for lang in Config.get('applangs') %}
+                            {% if lang['code'] == constant('ACTIVE_LANG') %}
+                                {{ lang['localname'] }}
+                            {% endif %}
+                        {% endfor %} 
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu change-language" role="menu">
+                        {% for lang in Config.get('applangs') %}
+                            <li>
+                                <a data-lang="{{ lang['code'] }}" href="javascript:void(0)">{{ lang['localname'] }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="{{ AuthUser.get('picture') }}" class="user-image img-circle" alt="User Image">
+                        <span class="hidden-xs">{{ AuthUser.get('firstname') }} {{ AuthUser.get('lastname') }}</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="user-header">
+                            <img src="{{ AuthUser.get('picture') }}" class="img-circle" alt="User Image">
+                            <p>
+                                {{ AuthUser.get('firstname') }} {{ AuthUser.get('lastname') }}
+                                <small>{{ AuthUser.get('email') }}</small>
+                            </p>
+                        </li>
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a href="{{ constant('APPURL') }}/profile"
+                                    class="btn btn-default btn-flat">{{ lang('Profile') }}</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="{{ constant('APPURL') }}/signout"
+                                    class="btn btn-default btn-flat">{{ lang('Signout') }}</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

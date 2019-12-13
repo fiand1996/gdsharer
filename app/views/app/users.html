@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"><i class="fa fa-users"></i> {{ lang('Users') }}</h3>
+                            </div>
+                            <div class="mailbox-controls with-border">
+                                <button type="button" class="btn btn-default btn-sm checkbox-toggle">
+                                    <i class="text-blue fa fa-square"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm checked-delete" disabled>
+                                    <i class="fa fa-trash"></i> {{ lang('Delete') }}
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm">
+                                    <i class="fa fa-refresh"></i> {{ lang('Reload') }}
+                                </button>
+                                <div class="pull-right">
+                                    <form action="">
+                                        <div class="has-feedback">
+                                            <input type="text" name="q" class="form-control input-sm"
+                                                placeholder="{{ lang('Search...') }}" value="{{ Input.get("q") }}">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="box-body no-padding">
+                                <table class="table table-hover table-bordered" id="dataTableBuilder"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr class="bg-info">
+                                            <th></th>
+                                            <th title="{{ lang('Picture') }}">
+                                                {{ lang('Picture') }}
+                                            </th>
+                                            <th title="{{ lang('Full Name') }}">
+                                                {{ lang('Full Name') }}
+                                            </th>
+                                            <th title="{{ lang('Email') }}">
+                                                {{ lang('Email') }}
+                                            </th>
+                                            <th title="{{ lang('Account Type') }}">
+                                                {{ lang('Account Type') }}
+                                            </th>
+                                            <th title="{{ lang('Status') }}">
+                                                {{ lang('Status') }}
+                                            </th>
+                                            <th title="{{ lang('Join Date') }}">
+                                                {{ lang('Join Date') }}
+                                            </th>
+                                            <th title="{{ lang('Last Login') }}">
+                                                {{ lang('Last Login') }}
+                                            </th>
+                                            <th title="{{ lang('Action') }}" width="130px">
+                                                {{ lang('Action') }}
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        {% if Users.getTotalCount() > 0 %}
+                                            {% for user in Users.getDataAs('User') %}
+                                                <tr>
+                                                    <td><input type="checkbox" data-id="{{ user.get('id') }}"
+                                                            class="row-checkbox icheck-flat-blue"></td>
+                                                    <td><img class="img-circle" width="30" src="{{ user.get('picture') }}" alt=""></td>
+                                                    <td>{{ user.get('firstname') }} {{ user.get('lastname') }}</td>
+                                                    <td>{{ user.get('email') }}</td>
+                                                    <td>{{ user.get('account_type') }}</td>
+                                                    <td>
+                                                        {% if user.get('is_active') == 1 %}
+                                                            <Label class="label label-success">{{ lang('Active') }}</Label>
+                                                        {% else %}
+                                                            <Label class="label label-danger">{{ lang('Inactive') }}</Label>
+                                                        {% endif %}
+                                                    </td>
+                                                    <td>
+                                                        {% set created = user.get('created') %}
+                                                        {% set dateformat = AuthUser.get('date_format') %}
+                                                        {% set timeformat = AuthUser.get('time_format') == "12" ? "h:i A" : "H:i" %}
+
+                                                        {{ dateFormat(created, dateformat, AuthUser.get('timezone')) }}
+                                                        {{ dateFormat(created, timeformat, AuthUser.get('timezone')) }}
+                                                    </td>
+                                                    <td>
+                                                        {% set lastlogin = user.get('last_login') %}
+                                                        {% set dateformat = AuthUser.get('date_format') %}
+                                                        {% set timeformat = AuthUser.get('time_format') == "12" ? "h:i A" : "H:i" %}
+
+                                                        {{ dateFormat(lastlogin, dateformat, AuthUser.get('timezone')) }}
+                                                        {{ dateFormat(lastlogin, timeformat, AuthUser.get('timezone')) }}
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group btn-group-xs" role="group"
+                                                            aria-label="Basic example">
+                                                        
+                                                            <a href="{{ constant('APPURL') }}/users/{{ user.get('id') }}" 
+                                                                class="btn btn-xs btn-primary btn-edit">
+                                                                <i class="glyphicon glyphicon-edit"></i>
+                                                                {{ lang('Edit') }}</a>
+
+                                                            {% set disabled =  user.get('id') == AuthUser.get('id') ? "disabled" : "" %}
+
+                                                            <button class="btn btn-xs btn-danger btn-remove"
+                                                                data-url="{{ currentUrl }}"
+                                                                data-id="{{ user.get('id') }}" {{ disabled }}>
+                                                                <i class="glyphicon glyphicon-trash"></i>
+                                                                {{ lang('Delete') }}</button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="9">
+                                                    <div class="center-block text-center">{{ lang('There is no data!') }}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            {% if Users.getTotalCount() > 0 %}
+                                <div class="box-footer clearfix">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+
+                                            {{ lang('Showing') }}
+                                            {{ Pagination.getFrom() }}
+                                            {{ lang('to') }}
+
+                                            {% if Pagination.isLastPage() %}
+                                                {{ Pagination.getTo() - 1 }}
+                                            {% elseif Input.get("page") is null %}
+                                                {{ Pagination.getTo() - 1 }}
+                                            {% else %}
+                                                {{ Pagination.getTo() }}
+                                            {% endif %}
+
+                                            {{ lang('of') }}
+                                            {{ Pagination.getCount() }}
+                                            {{ lang('entries') }}
+
+                                        </div>
+                                        <div class="col-sm-7">
+                                            {% autoescape false %}
+                                                {{ Pagination.render() }}
+                                            {% endautoescape %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+</body>
+
+</html>

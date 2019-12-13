@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"><i class="fa fa-share"></i> {{ lang('Shared Files') }}</h3>
+                            </div>
+                            <div class="mailbox-controls with-border">
+                                <button type="button" class="btn btn-default btn-sm checkbox-toggle">
+                                    <i class="text-blue fa fa-square"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm checked-delete" disabled>
+                                    <i class="fa fa-trash"></i> {{ lang('Delete') }}
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm">
+                                    <i class="fa fa-refresh"></i> {{ lang('Reload') }}
+                                </button>
+                                <div class="pull-right">
+                                    <form action="">
+                                        <div class="has-feedback">
+                                            <input type="text" name="q" class="form-control input-sm"
+                                                placeholder="{{ lang('Search...') }}"
+                                                value="{{ Input.get("q") }}">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="box-body no-padding">
+                                <table class="table table-hover table-bordered" id="dataTableBuilder"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr class="bg-info">
+                                            <th></th>
+                                            <th title="{{ lang('File Name') }}">
+                                                {{ lang('File Name') }}
+                                            </th>
+                                            <th title="{{ lang('Shareable link') }}">
+                                                {{ lang('Shareable link') }}
+                                            </th>
+                                            <th title="{{ lang('Created Date') }}">
+                                                {{ lang('Created Date') }}
+                                            </th>
+                                            <th title="{{ lang('File Type') }}">
+                                                {{ lang('File Type') }}
+                                            </th>
+                                            <th title="{{ lang('Downloaded') }}">
+                                                {{ lang('Downloaded') }}
+                                            </th>
+                                            <th title="{{ lang('Action') }}" width="200px">
+                                                {{ lang('Action') }}
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        {% if Shareds.getTotalCount() > 0 %}
+                                            {% for drive in Shareds.getDataAs('Shared') %}
+                                                <tr>
+                                                    <td><input type="checkbox" data-id="{{ drive.get('file_id') }}"
+                                                            class="row-checkbox icheck-flat-blue"></td>
+                                                    <td>{{ drive.get('file_name') }}</td>
+                                                    <td>
+                                                        <div class="input-group">
+                                                            
+                                                            {% set copyId = readableRandomString(12) %}
+
+                                                            <input type="text" id="{{ copyId }}" class="form-control"
+                                                                value="{{ constant('APPURL') }}/file/{{ drive.get('slug') }}">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-copy btn-default btn-flat"
+                                                                    data-clipboard-target="#{{ copyId }}">
+                                                                    <i class="fa fa-clone"></i>
+                                                                </button>
+                                                                <a href="{{ constant('APPURL') }}/file/{{ drive.get('slug') }}"
+                                                                    target="_blank" class="btn btn-default btn-flat">
+                                                                    <i class="fa fa-link"></i>
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        
+                                                        {% set created = drive.get('created') %}
+                                                        {% set dateformat = AuthUser.get('date_format') %}
+                                                        {% set timeformat = AuthUser.get('time_format') == "12" ? "h:i A" : "H:i" %}
+
+                                                        {{ dateFormat(created, dateformat, AuthUser.get('timezone')) }}
+                                                        {{ dateFormat(created, timeformat, AuthUser.get('timezone')) }}
+
+                                                    </td>
+                                                    <td>{{ drive.get('file_mimeType') }}</td>
+                                                    <td>
+                                                        <span
+                                                            class="label label-primary">{{ drive.get('download_count') }}x</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group btn-group-xs" role="group"
+                                                            aria-label="Basic example">
+
+                                                            <a class="btn btn-xs btn-info" disabled=""> <i
+                                                                class="glyphicon glyphicon-play"></i>
+                                                                {{ lang('Embed') }}</a>
+
+                                                            <a href="#" class="btn btn-xs btn-primary btn-edit"
+                                                                data-toggle="modal" data-target="#modal-default"
+                                                                data-id="{{ drive.get('id') }}"
+                                                                data-name="{{ drive.get('file_name') }}">
+                                                                <i class="glyphicon glyphicon-edit"></i>
+                                                                {{ lang('Edit') }}</a>
+
+                                                            <a href="#" class="btn btn-xs btn-danger btn-del"
+                                                                data-id="{{ drive.get('id') }}">
+                                                                <i class="glyphicon glyphicon-trash"></i>
+                                                                {{ lang('Delete') }}</a>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        {% else %}
+                                            <tr>
+                                                <td colspan="7">
+                                                    <div class="center-block text-center">{{ lang('There is no data!') }}</div>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                           
+                            {% if Shareds.getTotalCount() > 0 %}
+                                <div class="box-footer clearfix">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+
+                                            {{ lang('Showing') }}
+                                            {{ Pagination.getFrom() }}
+                                            {{ lang('to') }}
+
+                                            {% if Pagination.isLastPage() %}
+                                                {{ Pagination.getTo() - 1 }}
+                                            {% else %}
+                                                {{ Pagination.getTo() }}
+                                            {% endif %}
+
+                                            {{ lang('of') }}
+                                            {{ Pagination.getCount() }}
+                                            {{ lang('entries') }}
+                                            
+                                        </div>
+                                        <div class="col-sm-7">
+                                            {% autoescape false %}
+                                                {{ Pagination.render() }}
+                                            {% endautoescape %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+</body>
+
+</html>

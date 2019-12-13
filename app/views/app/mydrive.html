@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"><i class="fa fa-list-ul"></i> {{ lang('My Drive') }}</h3> 
+                                <small> ({{ lang('Showing max of 200 latest entries from your google drive') }})</small>
+                            </div>
+                            <div class="mailbox-controls with-border">
+                                <button type="button" class="btn btn-default btn-sm checkbox-toggle">
+                                    <i class="text-blue fa fa-square"></i>
+                                </button>
+                                <button type="button" class="btn btn-success btn-sm checked-share" disabled>
+                                    <i class="fa fa-share"></i> {{ lang('Share') }}
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm checked-delete" disabled>
+                                    <i class="fa fa-trash"></i> {{ lang('Delete') }}
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm hidden-sm hidden-md hidden-xs">
+                                    <i class="fa fa-refresh"></i> {{ lang('Reload') }}
+                                </button>
+                                <div class="pull-right">
+                                    <form action="">
+                                        <div class="has-feedback">
+                                            <input type="text" name="q" class="form-control input-sm"
+                                                placeholder="{{ lang('Search...') }}"
+                                                value="{{ Input.get('q') }}">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <ul class="files clearfix">
+
+                                    {% if Mydrives.getTotalCount() > 0 %}
+                                        {% for drive in Mydrives.getDataAs('Mydrive') %}
+                                        <li>
+                                            <span class="file-select">
+                                                <input type="checkbox" data-id="{{ drive.get('file_id') }}"
+                                                    class="row-checkbox icheck-flat-blue">
+                                            </span>
+
+                                            {% autoescape false %}
+                                                {{ fileIcon(drive.get('file_mimeType')) }}
+                                            {% endautoescape %}
+                                            
+                                            <div class="file-info">
+                                                <a target="_blank" href="{{ drive.get('file_viewLink') }}"
+                                                    class="file-name" title="{{ drive.get('file_name') }}">
+                                                    {{ drive.get('file_name') }}
+                                                </a>
+                                                <span
+                                                    class="file-size">{{ readableFileSize(drive.get('file_size')) }}&nbsp;
+                                                    <div class="btn-group btn-group-xs pull-right">
+                                                        <button type="button" class="btn btn-default btn-xs dropdown-toggle"
+                                                            data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a target="_blank"
+                                                                    href="{{ drive.get('file_viewLink') }}">{{ lang('View') }}</a></li>
+                                                            <li><a target="_blank"
+                                                                    href="{{ drive.get('file_contentLink') }}">{{ lang('Download') }}</a>
+                                                            </li>
+                                                            <li class="divider"></li>
+                                                            <li>
+                                                                <a class="share-file" href="javascript:void(0)"
+                                                                    data-id="{{ drive.get('file_id') }}"
+                                                                    data-url="{{ constant('APPURL') }}/mydrive">{{ lang('Share') }}</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="remove-file" href="javascript:void(0)"
+                                                                    data-id="{{ drive.get('file_id') }}"
+                                                                    data-url="{{ constant('APPURL') }}/mydrive">{{ lang('Delete') }}</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        {% endfor %}
+                                    {% else %}
+                                        <tr>
+                                            <td colspan="4">
+                                                <div class="center-block text-center">{{ lang('There is no data!') }}</div>
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+
+                                </ul>
+                            </div>
+
+                            {% if Mydrives.getTotalCount() > 0 %}
+                                <div class="box-footer clearfix">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            
+                                            {{ lang('Showing') }}
+                                            {{ Pagination.getFrom() }}
+                                            {{ lang('to') }}
+
+                                            {% if Pagination.isLastPage() %}
+                                            {{ Pagination.getTo() - 1 }}
+                                            {% else %}
+                                            {{ Pagination.getTo() }}
+                                            {% endif %}
+
+                                            {{ lang('of') }}
+                                            {{ Pagination.getCount() }}
+                                            {{ lang('entries') }}
+
+                                        </div>
+                                        <div class="col-sm-7">
+                                            {% autoescape false %}
+                                                {{ Pagination.render() }}
+                                            {% endautoescape %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+</body>
+
+</html>

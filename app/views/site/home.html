@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ include('partials/head.html') }}
+
+<body data-spy="scroll" data-target="#navigation" data-offset="50">
+     <div id="app" v-cloak>
+
+          {{ include('partials/nav.html') }}
+
+          <section id="home" name="home">
+               <div id="headerwrap">
+                    <div class="container">
+                         <div class="row centered">
+                              <div class="col-lg-12">
+                                   <h1>
+                                        <b><a href="{{ constant('APPURL') }}">
+                                             {{ generalSetting('site_name') }}
+                                        </a></b>
+                                        {{ generalSetting('site_title') }}
+                                   </h1>
+                                   <h3>{{ generalSetting('site_description') }}</h3>
+                                   
+                                   {{ getFlashMessage() }}
+                                   
+                                   <h3>
+                                        {% if AuthUser is not null %}
+                                             <a href="{{ constant('APPURL') }}/dashboard"
+                                                class="btn btn-lg btn-primary"><i class="fa fa-dashboard"></i> {{ lang('Dashboard') }}</a>
+                                        {% else %}
+                                             <a href="{{ constant('APPURL') }}/signin"
+                                                class="btn btn-lg btn-danger">{{ lang('Connect Drive') }}</a>
+                                        {% endif %}
+                                   </h3>
+                              </div>
+                              <div class="col-lg-2">
+                                   <h5>Amazing admin template</h5>
+                                   <p>Based on adminlte bootstrap theme</p>
+                                   <img class="hidden-xs hidden-sm hidden-md"
+                                        src="{{ constant('APPURL') }}/assets/img/arrow1.png">
+                              </div>
+                              <div class="col-lg-8">
+                                   <img class="img-responsive"
+                                        src="{{ constant('APPURL') }}/assets/img/app-bg.png" alt="">
+                              </div>
+                              <div class="col-lg-2">
+                                   <br>
+                                   <img class="hidden-xs hidden-sm hidden-md"
+                                        src="{{ constant('APPURL') }}/assets/img/arrow2.png">
+                                   <h5>Awesome packaged...</h5>
+                                   <p>... by <a href="https://github.com/fiand1996">Fiand T</a> at <a
+                                             href="#">adminlte.io</a> ready to
+                                        use!</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="intro-wrap" name="intro-wrap">
+               <div id="intro">
+                    <div class="container">
+                         <div class="row centered">
+                              <br>
+                              <br>
+                              <div class="col-lg-4">
+                                   <img src="{{ constant('APPURL') }}/assets/img/secure.png" alt="">
+                                   <h3>Secure</h3>
+                                   <p>Share your file in more secure way, create a short link for any file that you
+                                        share</p>
+                              </div>
+                              <div class="col-lg-4">
+                                   <img src="{{ constant('APPURL') }}/assets/img/unlimited.png" alt="">
+                                   <h3>Unlimited</h3>
+                                   <p>No quota limit. No annoying waiting times, Share & Download as many files as you
+                                        want</p>
+                              </div>
+                              <div class="col-lg-4">
+                                   <img src="{{ constant('APPURL') }}/assets/img/easy.png" alt="">
+                                   <h3>Easy to Use</h3>
+                                   <p>Simple UI design, One-Click to share your files directly through this application
+                                   </p>
+                              </div>
+                         </div>
+                         <br>
+                         <hr>
+                    </div>
+               </div>
+          </section>
+          <section id="features-wrap" name="features-wrap">
+               <div id="features">
+                    <div class="container">
+                         <div class="row">
+                              <h1 class="centered">What is this !?</h1>
+                              <br>
+                              <br>
+                              <div class="col-lg-12 centered">
+                                   <p>An application that can help you, keep your files accessible without worrying
+                                        about the Google Drive quota limit reached.</p>
+                              </div>
+                         </div>
+                         <br>
+                         <br>
+                    </div>
+               </div>
+          </section>
+
+          {{ include('partials/footer.html') }}
+
+     </div>
+
+     {{ include('partials/script.html') }}
+     
+</body>
+
+</html>

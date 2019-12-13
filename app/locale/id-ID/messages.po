@@ -1,0 +1,513 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Nextpost v.3 - Main\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: 
+msgid "Tools"
+msgstr "Alat"
+
+#: 
+msgid "Main Menu"
+msgstr "Menu Utama"
+
+#: 
+msgid "Administrator"
+msgstr "Administrator"
+
+#: 
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: 
+msgid "My Drive"
+msgstr "Drive Saya"
+
+#: 
+msgid "Shared Files"
+msgstr "File yang Dibagikan"
+
+#: 
+msgid "Upload Files"
+msgstr "Unggah Berkas"
+
+#: 
+msgid "Bulk Link"
+msgstr "Tautan Massal"
+
+#: 
+msgid "Copy File"
+msgstr "Salin File"
+
+#: 
+msgid "Users"
+msgstr "Pengguna"
+
+#: 
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: 
+msgid "Profile"
+msgstr "Profile"
+
+#: 
+msgid "Terms of Service"
+msgstr "Ketentuan Layanan"
+
+#: 
+msgid "Privacy Policy"
+msgstr "Kebijakan Privasi"
+
+#: 
+msgid "Contact Us"
+msgstr "Hubungi kami"
+
+#: 
+msgid "About"
+msgstr "Tentang"
+
+#: 
+msgid "Signout"
+msgstr "Keluar"
+
+#: 
+msgid "Connect Drive"
+msgstr "Hubungkan Drive"
+
+#: 
+msgid "Connect Drive to download"
+msgstr "Hubungkan Drive untuk mengunduh"
+
+#: 
+msgid "Signin"
+msgstr "Masuk"
+
+#: 
+msgid "My Profile"
+msgstr "Profile Saya"
+
+#: 
+msgid "Full Name"
+msgstr "Nama Lengkap"
+
+#: 
+msgid "Picture"
+msgstr "Gambar"
+
+#: 
+msgid "Account Type"
+msgstr "Tipe Akun"
+
+#: 
+msgid "Status"
+msgstr "Status"
+
+#: 
+msgid "Join Date"
+msgstr "Tanggal Gabung"
+
+#: 
+msgid "Last Login"
+msgstr "Terakhir Login"
+
+#: 
+msgid "Active"
+msgstr "Aktif"
+
+#: 
+msgid "Inactive"
+msgstr "Tidak Aktif"
+
+#: 
+msgid "Firstname"
+msgstr "Nama Depan"
+
+#: 
+msgid "Lastname"
+msgstr "Nama Belakang"
+
+#: 
+msgid "Email"
+msgstr "Email"
+
+#: 
+msgid "Time Format"
+msgstr "Format Waktu"
+
+#: 
+msgid "Date Format"
+msgstr "Format Tanggal"
+
+#: 
+msgid "Timezone"
+msgstr "Zona Waktu"
+
+#: 
+msgid "Change Picture"
+msgstr "Pilih Gambar"
+
+#: 
+msgid "Save Changes"
+msgstr "Simpan Perubahan"
+
+#: 
+msgid "Site Name"
+msgstr "Nama Situs"
+
+#: 
+msgid "Site Title"
+msgstr "Judul Situs"
+
+#: 
+msgid "Site Description"
+msgstr "Deskripsi Situs"
+
+#: 
+msgid "Site Keywords"
+msgstr "Katakunci Situs"
+
+#: 
+msgid "Geonamesorg Username"
+msgstr "Nama pengguna Geonamesorg"
+
+#: 
+msgid "Recommended length of the description is 150-160 characters"
+msgstr "Panjang deskripsi yang disarankan adalah 150-160 karakter"
+
+#: 
+msgid "Unlimited"
+msgstr "Tak terbatas"
+
+#: 
+msgid "Storage Quota"
+msgstr "Kuota penyimpanan"
+
+#: 
+msgid "Total Usage"
+msgstr "Total Penggunaan"
+
+#: 
+msgid "Usage in Drive"
+msgstr "Penggunaan dalam Drive"
+
+#: 
+msgid "Trash"
+msgstr "Sampah"
+
+#: 
+msgid "Max Upload Size"
+msgstr "Ukuran Unggah Maks"
+
+#: 
+msgid "Free Space"
+msgstr "Ruang Bebas"
+
+#: 
+msgid "Clear Trash"
+msgstr "Bersihkan Sampah"
+
+#: 
+msgid "Embed"
+msgstr "Embed"
+
+#: 
+msgid "Edit"
+msgstr "Edit"
+
+#: 
+msgid "Delete"
+msgstr "Hapus"
+
+#: 
+msgid "Share"
+msgstr "Bagikan"
+
+#: 
+msgid "Reload"
+msgstr "Muat Ulang"
+
+#: 
+msgid "View"
+msgstr "Lihat"
+
+#: 
+msgid "Search..."
+msgstr "Pencarian..."
+
+#: 
+msgid "Most Downloaded Files"
+msgstr "File yang Paling Banyak Diunduh"
+
+#: 
+msgid "Latest Shared Files"
+msgstr "File Bersama Terbaru"
+
+#: 
+msgid "Total Shared"
+msgstr "Total Dibagikan"
+
+#: 
+msgid "Manage"
+msgstr "Kelola"
+
+#: 
+msgid "File Name"
+msgstr "Nama File"
+
+#: 
+msgid "Shareable link"
+msgstr "Tautan yang dibagikan"
+
+#: 
+msgid "File Type"
+msgstr "Tipe File"
+
+#: 
+msgid "File Size"
+msgstr "Ukuran File"
+
+#: 
+msgid "Download"
+msgstr "Unduh"
+
+#: 
+msgid "Downloaded"
+msgstr "Terunduh"
+
+#: 
+msgid "Share this file"
+msgstr "Bagikan file ini"
+
+#: 
+msgid "File Information"
+msgstr "Informasi File"
+
+#: 
+msgid "Created Date"
+msgstr "Tanggal Buat"
+
+#: 
+msgid "Page Not Found"
+msgstr "Halaman Tidak Ditemukan"
+
+#: 
+msgid "Sorry, the page you are looking for could not be found."
+msgstr "Maaf, halaman yang Anda cari tidak dapat ditemukan."
+
+#: 
+msgid "Home"
+msgstr "Home"
+
+#: 
+msgid "Action"
+msgstr "Aksi"
+
+#: 
+msgid "Showing"
+msgstr "Menampilkan"
+
+#: 
+msgid "to"
+msgstr "sampai"
+
+#: 
+msgid "of"
+msgstr "dari"
+
+#: 
+msgid "entries"
+msgstr "entri"
+
+#: 
+msgid "Select file"
+msgstr "Pilih file"
+
+#: 
+msgid "Selected file"
+msgstr "File yang dipilih"
+
+#: 
+msgid "Upload"
+msgstr "Unggah"
+
+#: 
+msgid "Google Drive links"
+msgstr "Tautan Google Drive"
+
+#: 
+msgid "New Name (Optional)"
+msgstr "Nama Baru (Opsional)"
+
+#: 
+msgid "Url must be public. Valid inputs are Google Drive links :"
+msgstr "Tautan harus publik. Input yang valid untuk tautan Google Drive:"
+
+#: 
+msgid "Showing max of 200 latest entries from your google drive"
+msgstr "Menampilkan maksimal 200 entri terbaru dari drive google Anda"
+
+#: 
+msgid "Process"
+msgstr "Proses"
+
+#: 
+msgid "Copy"
+msgstr "Salin"
+
+#: 
+msgid "There is no data!"
+msgstr "Tidak ada data!"
+
+#: 
+msgid "Are you sure?"
+msgstr "Apakah kamu yakin?"
+
+#: 
+msgid "Are you sure to remove data?"
+msgstr "Apakah kamu yakin menghapus data?"
+
+#: 
+msgid "Are you sure to empty trash?"
+msgstr "Yakin ingin mengosongkan sampah ?"
+
+#: 
+msgid "Are you sure to delete %s files?"
+msgstr "Apakah kamu yakin akan menghapus %s file?"
+
+#: 
+msgid "Please select a file"
+msgstr "Pilih sebuah file"
+
+#: 
+msgid "%s files successfully deleted"
+msgstr "%s file berhasil dihapus"
+
+#: 
+msgid "%s files successfully shared"
+msgstr "%s file berhasil dibagikan"
+
+#: 
+msgid "%s has been copied to your drive!"
+msgstr "%s telah disalin ke drive Anda!"
+
+#: 
+msgid "It is not possible to get back removed file!"
+msgstr "Tidak mungkin untuk mendapatkan kembali file yang dihapus!"
+
+#: 
+msgid "Yes, Delete"
+msgstr "Ya, Hapus"
+
+#: 
+msgid "Cancel"
+msgstr "Batal"
+
+#: 
+msgid "Close"
+msgstr "Tutup"
+
+#: 
+msgid "Success"
+msgstr "Sukses"
+
+#: 
+msgid "Info"
+msgstr "Info"
+
+#: 
+msgid "Error"
+msgstr "Kesalahan"
+
+#: 
+msgid "Done"
+msgstr "Selesai"
+
+#: 
+msgid "Version"
+msgstr "Versi"
+
+#: 
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#: 
+msgid "Failed"
+msgstr "Gagal"
+
+#: 
+msgid "Loading..."
+msgstr "Loading..."
+
+#: 
+msgid "Copied!"
+msgstr "Disalin!"
+
+#: 
+msgid "Changes saved!"
+msgstr "Perubahan tersimpan! "
+
+#: 
+msgid "Oops, unable to copy"
+msgstr "Ups, tidak dapat menyalin"
+
+#: 
+msgid "Fill required fields"
+msgstr "Isi bidang yang wajib diisi"
+
+#: 
+msgid "Missing some of required data."
+msgstr "Kehilangan beberapa data yang diperlukan."
+
+#: 
+msgid "Failed to copy file"
+msgstr "Gagal menyalin file"
+
+#: 
+msgid "Failed to empty trash"
+msgstr "Gagal mengosongkan sampah"
+
+#: 
+msgid "Url invalid"
+msgstr "URL tidak valid"
+
+#: 
+msgid "Encryption error"
+msgstr "Kesalahan enkripsi"
+
+#: 
+msgid "Unauthorized"
+msgstr "Unauthorized"
+
+#: 
+msgid "Failed to download file"
+msgstr "Gagal mengunduh file"
+
+#: 
+msgid "Failed to delete file"
+msgstr "Gagal menghapus file"
+
+#: 
+msgid "Failed to share file"
+msgstr "Gagal mambagikan file"
+
+#: 
+msgid "Your Google Drive account was full, please delete some files."
+msgstr "Akun Google Drive Anda penuh, harap hapus beberapa file."
+
+#: 
+msgid "Your Google Drive account was limited, please login with another Google account. The account will be returned to normal after 24 hours."
+msgstr "Akun Google Drive Anda terbatas, silakan masuk dengan akun Google lain. Akun akan kembali normal setelah 24 jam."
+
+#: 
+msgid "File cannot be opened"
+msgstr "File tidak dapat dibuka"
+
+#: 
+msgid "Oops! An error occured. Please try again later!"
+msgstr "Ups! Terjadi kesalahan. Silakan coba lagi nanti!"

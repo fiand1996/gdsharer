@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+{{ include('partials/head.html') }}
+
+<body class="hold-transition fixed skin-red-light sidebar-mini onprogress">
+    <div class="wrapper">
+
+        {{ include('partials/nav.html') }}
+
+        {{ include('partials/sidenav.html') }}
+
+        <div class="content-wrapper">
+
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"><i class="fa fa-cloud-upload"></i> {{ lang('Upload Files') }}</h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="selectarea text-center">
+                                    <button class="btn btn-sm btn-default" type="button" id="pick"
+                                        data-apikey="{{ constant('GOOGLE_API_KEY') }}"
+                                        data-client="{{ constant('GOOGLE_CLIENT_ID') }}">
+                                        <i class="fa fa-folder-open-o"></i> {{ lang('Select file') }}
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="box-footer text-center clearfix">
+                                <button class="btn btn-primary" type="button" id="upload">
+                                    <i class="fa fa-cloud-upload"></i> {{ lang('Upload') }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="uploadList" class="panel panel-default" style="display:none;">
+                            <div class="panel-heading"><i class="fa fa-file-o"></i> {{ lang('Selected file') }}</div>
+                            <div class="box-body">
+                                <div class="fileinfo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="uploadResults" class="panel panel-default" style="display:none;">
+                            <div class="box-body">
+                                <div class="results well well-sm no-margin">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        {{ include('partials/footer.html') }}
+
+        {{ include('partials/script.html') }}
+
+        <script src="{{ constant('APPURL') }}/assets/js/upload.js?v={{ constant('APP_VERSION') }}"></script>
+        <script src="{{ constant('APPURL') }}/assets/js/filepicker.js?v={{ constant('APP_VERSION') }}"></script>
+        <script src="https://www.google.com/jsapi?key={{ constant('GOOGLE_API_KEY') }}"></script>
+        <script src="https://apis.google.com/js/client.js?onload=initPicker"></script>
+
+</body>
+
+</html>
